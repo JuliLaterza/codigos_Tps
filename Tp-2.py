@@ -77,14 +77,9 @@ def lista_palabras(lista1:list,lista2: list,eliminados:list,resultante:list):
 
 
 lista1 = ["gato","perro","pato"]
-
 lista2 = ["perro","ballena","mariposa"]
-
 lista_resultante = []
-
 lista_eliminados = []
-
-
 print(lista_palabras(lista1,lista2,lista_eliminados,lista_resultante))
 
 
@@ -139,3 +134,37 @@ for i in range(int(input("Ingresar valor de A: ")),int(input("Ingresar número B
     numeros.append(i)
 
 print(multiplos(numeros))
+
+#%% Ejercicio 10
+import random
+
+def impares(lista):
+    impares = [i for i in lista if (i%2)!=0]
+    return impares
+
+
+array = []
+for i in range(random.randint(1,99)):
+    array.append(i)
+
+print(impares(array))
+
+#%% Ejercicio 12
+
+def informar():
+    pass
+
+nro_socio = int(input('nro socio: '))
+
+socios = []
+
+while nro_socio != 0:
+    if 10000<=nro_socio<=99999:
+        socios.append(nro_socio)
+        nro_socio = int(input('nro socio: '))
+    else:
+        nro_socio = int(input('los numeros de socios tienen que ser de 5 caracteres'))
+
+
+for socio in socios:
+    print(socio,"\n")
