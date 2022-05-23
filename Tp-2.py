@@ -50,6 +50,30 @@ num = int(input("Ingresar número a eliminar: "))
 dupli(num,resultado)
 print(resultado)
 
+
+#%%  Ejercicio 2
+import random
+
+def generar_lista(lista:list):
+    for i in range(50):
+        lista.append(random.randint(1,100))
+    return lista
+
+def repetidos(arr:list):
+    if len(arr) == len(set(arr)):
+        repetidos = False
+    else:
+        repetidos = True
+    
+    lista_sin_repetidos = set(arr)
+    return repetidos, lista_sin_repetidos
+
+array = []
+generar_lista(array)
+repet = repetidos(generar_lista(array))
+print(repet)
+
+
 #%% Ejercicio 3
 
 def cuadrados(array:list):
@@ -151,20 +175,13 @@ print(impares(array))
 
 #%% Ejercicio 12
 
-def informar():
+def informe(array:list):
     pass
 
-nro_socio = int(input('nro socio: '))
-
 socios = []
+num_socio = int(input('ingrese numero de socio'))
+while num_socio!=0:
+     if 10000<=num_socio<=99999:
+        socios.append(num_socio)
 
-while nro_socio != 0:
-    if 10000<=nro_socio<=99999:
-        socios.append(nro_socio)
-        nro_socio = int(input('nro socio: '))
-    else:
-        nro_socio = int(input('los numeros de socios tienen que ser de 5 caracteres'))
-
-
-for socio in socios:
-    print(socio,"\n")
+informe(socios)

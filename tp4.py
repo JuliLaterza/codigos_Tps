@@ -18,5 +18,8 @@ def capicua(palabra: str):
         return False
 
 texto = input('Ingrese palabra para ver si es capicua: ')
-
 print(capicua(texto))
+
+
+#%% ejercicio 7
+
