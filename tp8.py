@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # -*- coding: utf-8 -*-
 """
 Created on Sun Jul 24 00:59:04 2022
@@ -5,6 +6,8 @@ Created on Sun Jul 24 00:59:04 2022
 @author: Usuario
 """
 
+=======
+>>>>>>> 94c3d53dec97dec5ec0e386026d6d8b60ebde3ff
 #%% Ejercicio 2 Tuplas
 
 def dias(tup):
@@ -45,6 +48,7 @@ dic = {}
 for i in range(20):
     dic[i+1] = (i+1)**2
 print(dic)
+<<<<<<< HEAD
 
 #%% Ejercicio 9
 
@@ -91,3 +95,5 @@ print(aumen)
 print(elmayor(aumen))
 
 #%% 
+=======
+>>>>>>> 94c3d53dec97dec5ec0e386026d6d8b60ebde3ff
